@@ -47,6 +47,7 @@ const octokit: Octokit = new Octokit()
 async function run(): Promise<void> {
     try {
         logger.info('Start getting job info...')
+        logger.info('Dummy log.')
         const jobInfo = await getJobInfo(octokit)
         if (!jobInfo) {
             logger.error(`Job info could not be obtained from github!`)
