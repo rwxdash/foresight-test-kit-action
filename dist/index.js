@@ -467,6 +467,7 @@ function run() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
             logger.info('Start getting job info...');
+            logger.info('Dummy log.');
             const jobInfo = yield (0, job_1.getJobInfo)(octokit);
             if (!jobInfo) {
                 logger.error(`Job info could not be obtained from github!`);
